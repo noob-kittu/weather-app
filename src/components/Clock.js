@@ -1,8 +1,6 @@
 import React from 'react'
-import Temp from './Temp'
-import City from './City'
 
-export default function Clock() {
+export default function Clock(props) {
   return (
     <div className="button button-dial">
 
@@ -18,8 +16,12 @@ export default function Clock() {
       <div className="widget">
 
         <div className="left-panel panel">
-            <City/>
-            <Temp />
+        <div className="city">
+          {props.city}
+        </div>
+        <div className="temp">
+            {props.temp}&deg;
+        </div>
         </div>
       </div>
     </div>
