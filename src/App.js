@@ -8,8 +8,8 @@ import Heat from './components/Heat';
 function App() {
   // State
   const [apiData, setApiData] = useState({});
-  const [getState, setGetState] = useState('udaipur');
-  const [state, setState] = useState('udaipur');
+  const [getState, setGetState] = useState('delhi');
+  const [state, setState] = useState('delhi');
   const [clicked, setClicked] = useState(false)
 
     const clickstat= ()=>{
